@@ -7,7 +7,7 @@ networks:
 interfaces:
     leaf01:
         loopback: "10.0.0.11"
-        asn: 65011
+        asn: 4200000001
         networks:
             br0:
                 ip: "172.16.1.1/24"
@@ -17,7 +17,7 @@ interfaces:
             swp52:
     leaf02:
         loopback: "10.0.0.12"
-        asn: 65012
+        asn: 4200000002
         networks:
             br0:
                 ip: "172.16.2.1/24"
@@ -27,7 +27,7 @@ interfaces:
             swp52:
     spine01:
         loopback: "10.0.0.21"
-        asn: 65020
+        asn: 4200000100
         neighbors:
             swp1:
             swp2:
@@ -35,7 +35,7 @@ interfaces:
             swp4:
     spine02:
         loopback: "10.0.0.22"
-        asn: 65020
+        asn: 4200000100
         neighbors:
             swp1:
             swp2:
